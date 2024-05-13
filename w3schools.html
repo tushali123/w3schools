@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*
+    {
+        margin: 0px;
+    }
+    body{
+        height: 5000px;
+    }
+    
+        .d1{
+            width: 100%;
+            height: 60px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background-color: white;
+            margin-bottom: 0px;
+        }
+        
+        .nav li{
+            display: inline-block;
+            font-size: 25px;
+            padding: 10px 20px;
+        }
+        .nav li:hover{
+            cursor:pointer;
+            background-color: rgb(70, 206, 145);
+        }
+        .a{
+            width: 150px;
+            height: 30px;
+            border-radius: 20px;
+            border:2px solid grey;
+            background-color: white;
+            background-image: url("search.png");
+            background-position: right;
+            background-size: 17px;
+            background-repeat: no-repeat;
+            text-align: left;
+            font-size: 20px;
+        }
+        .d2{
+            position: fixed;
+            top: 50px;
+            left: 0px;
+            background-color: rgb(27, 31, 44);
+            width: 100%;
+            height: 45px;
+        }
+        .d2 li{
+            display: inline-block;
+            padding: 10px 15px;
+           
+        }
+        .b{
+            color: white;
+            font-size: 20px;
+        }
+        .d2 li:hover{
+            cursor: pointer;
+            background-color: black;
+        }
+        .d3{
+            width: 20%;
+            position: fixed;
+            top: 95px;
+            height: 750px;
+            overflow: auto;
+            
+            padding-top: 10px;
+            background-color: rgba(128, 128, 128, 0.203);
+        }
+        .d4{
+            width: 65%;
+            height: 750px;
+            margin-top: 95px;
+            margin-left: 21%;
+            
+            
+        }
+        .c{
+            padding-bottom: 10px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 20px;
+        }
+        .c:hover{
+            cursor: pointer;
+            background-color: rgba(128, 128, 128, 0.597);
+        }
+        .b1{
+            background-color: rgb(32, 198, 123);
+            color: white;
+            font-weight: bold;
+            font-size: 23px;
+            width: 150px;
+            height: 60px;
+            border-radius: 8px;
+            border: none;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        .b1:hover{
+            cursor: pointer;
+            background-color: rgb(28, 171, 106);
+        }
+        .b2{
+            background-color: rgb(32, 198, 123);
+            color: white;
+            font-weight: bold;
+            font-size: 23px;
+            width: 150px;
+            height: 60px;
+            border-radius: 8px;
+            border: none;
+            margin-left: 700px;
+            margin-top: 30px;
+        }
+        .b2:hover{
+            cursor: pointer;
+            background-color: rgb(28, 171, 106);
+        }
+        .d5{
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+            background-color: rgba(156, 206, 225, 0.446);
+            padding-left: 30px;
+            padding-top: 60px;
+            margin-bottom: 30px;
+        }
+        .b3{
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(32, 198, 123);
+            color: white;
+            font-weight: bold;
+            font-size: 21px;
+            width: 350px;
+            height: 60px;
+        }
+        .b3:hover{
+            cursor: pointer;
+            background-color: rgb(38, 161, 102);
+        }
+        .p1{
+            margin-bottom: 30px;
+            font-family: monospace;
+            font-size: 22px;
+            font-weight: 540;
+        }
+        .d{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 45px;
+            font-weight: 500;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+        .e{
+            margin-left: 30px;
+            font-size: 25px;
+            margin-bottom: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .d6{
+            background-color: rgba(128, 128, 128, 0.203);
+            width: 98%;
+            margin-left: 30px;
+            border-radius: 5px;
+            height: 500px;
+            padding-top: 30px;
+        }
+        .f{
+            font-size: 30px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+        .d7{
+            width: 94%;
+            margin-left: 20px;
+            background-color: white;
+            height: 310px;
+            border-left: 6px solid rgb(32, 198, 123);
+            padding-left: 20px;
+            padding-top: 20px;
+            
+        }
+        .g{
+            border: none;
+            font-size: 20px;
+            color: blue;
+            width: 10px;
+        }
+        .h{
+            border: none;
+            font-size: 20px;
+            color: brown;
+            width: 100px;
+        }
+        .i{
+            border: none;
+            font-size: 20px;
+            color: red;
+            width: 37px;
+        }
+        .j{
+            border: none;
+            font-size: 20px;
+            color: brown;
+            width: 37px;
+        }
+        .b4{
+         background-color: rgb(32, 198, 123);
+         width: 220px;
+         border-radius: 8px;
+         color: white; 
+         font-weight: bold;
+        font-size: 23px;  
+        border: none;
+        height: 55px;
+        margin-top: 20px;
+        margin-left: 20px;
+        }
+        .b4:hover{
+            cursor: pointer;
+            background-color: rgb(38, 161, 102);
+        }
+        .k{
+            font-size: 25px;
+            margin-left: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .b5{
+            background-color: rgba(128, 128, 128, 0.203);
+            margin-left: 30px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            height: 55px;
+            width: 250px;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .b5:hover{
+            cursor: pointer;
+            background-color: rgb(38, 161, 102);
+        }
+        .d8{
+            margin-bottom: 30px;
+            background-color: rgb(27, 31, 44);
+            width: 98%;
+            margin-left: 30px;
+            border-radius: 5px;
+            height: 500px;
+            padding-top: 30px;
+        }
+        .l{
+            margin-left: 20px;
+            color: white;
+            font-size: 45px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .d9{
+            width: 98%;
+            height: 70px;
+            box-sizing: border-box;
+            background-color: rgba(128, 128, 128, 0.203);
+            margin-right: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+
+        }
+        .m{
+            font-family: monospace;
+            font-size: 22px;
+        }
+        .n{
+            margin-top: 30px; 
+            font-size: 25px;
+        }
+        .n:hover{
+            cursor: pointer;
+            color: rgb(32, 198, 123);
+        }
+        .b6{
+            background-color: rgb(12, 140, 190);
+            color: white;
+            margin-left: 30px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            height: 55px;
+            width: 250px;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .b6:hover{
+            cursor: pointer;
+            background-color: rgb(9, 130, 178);
+        }
+        .d10{
+            width: 100%;
+            background-image: url("w3.png");
+            background-size: cover;
+            height: 500px;
+            margin-bottom: 50px;
+        }
+        .b7{
+            background-color: rgba(128, 128, 128, 0.203);
+            font-size: 21px;
+            border: none;
+            border-radius: 8px;
+            width: 338px;
+            height: 80px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+        .b7:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+        .p{
+            font-size: 70px;
+            margin-top: 40px;
+            margin-left: 40px;
+            color: pink;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .q{
+            font-size: 55px;
+            margin-top: 80px;
+            margin-left: 40px;
+            color: pink;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        }
+        .b8{
+            color: white;
+            border-radius: 40px;
+            border: none;
+            width: 300px;
+            height: 80px;
+            margin-left: 40px;
+            margin-top: 50px;
+            font-size: 30px;
+            font-weight: bold;
+            background-color: rgb(32, 198, 123);
+        }
+        .b8:hover{
+            cursor: pointer;
+            background-color: rgb(38, 161, 102);
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <ul class="nav">
+            <li>
+                Tutorials
+            </li>
+            <li>
+                Exercises
+            </li>
+            <li>
+                Certificates
+            </li>
+            <li>
+                Services
+            </li>           
+                <input type="text" placeholder="Search.." class="a">           
+        </ul>              
+    </div>
+    <div class="d2">
+        <ul class="b">
+            <li style="background-color: rgb(32, 198, 123);">HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>SQL</li>
+            <li>PYTHON</li>
+            <li>JAVA</li>
+            <li>PHP</li>
+            <li>HOW TO</li>
+            <li>W3.CSS</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>BOOTSTRAP</li>
+            <li>REACT</li>
+            <li>MYSQL</li>
+            <li>JQUERY</li>
+            <li>EXCEL</li>
+            <li>></li>
+        </ul>
+    </div>
+    <div class="d3">
+        <p style="font-size: 35px; margin-bottom: 10px; padding-left: 20px;">HTML Tutorial</p>
+        <p class="c" style="background-color: rgb(32, 198, 123);">HTML Home</p>
+        <p class="c">HTML Introduction</p>
+        <p class="c">HTML Editors</p>
+        <p class="c">HTML Basic</p>
+        <p class="c">HTML Elements</p>
+        <p class="c">HTML Attributes</p>
+        <p class="c">HTML Headings</p>
+        <p class="c">HTML Paragraphs</p>
+        <p class="c">HTML Styles</p>
+        <p class="c">HTML Formatting</p>
+        <p class="c">HTML Quotations</p>
+        <p class="c">HTML Comments</p>
+        <p class="c">HTML Colors</p>
+        <p class="c">HTML CSS</p>
+        <p class="c">HTML Links</p>
+        <p class="c">HTML Images</p>
+        <p class="c">HTML Favicon</p>
+        <p class="c">HTML Page Title</p>
+        <p class="c">HTML Tables</p>
+        <p class="c">HTML Lists</p>
+        <p class="c">HTML Block and Inline</p>
+        <p class="c">HTML Div</p>
+        <p class="c">HTML Classes</p>
+        <p class="c">HTML Id</p>
+        <p class="c">HTML Home</p>
+        <p class="c">HTML Introduction</p>
+        <p class="c">HTML Editors</p>
+        <p class="c">HTML Basic</p>
+        <p class="c">HTML Elements</p>
+        <p class="c">HTML Attributes</p>
+        <p class="c">HTML Headings</p>
+        <p class="c">HTML Paragraphs</p>
+        <p class="c">HTML Styles</p>
+        <p class="c">HTML Formatting</p>
+        <p class="c">HTML Quotations</p>
+        <p class="c">HTML Comments</p>
+        <p class="c">HTML Colors</p>
+        <p class="c">HTML CSS</p>
+        <p class="c">HTML Links</p>
+        <p class="c">HTML Images</p>
+        <p class="c">HTML Favicon</p>
+        <p class="c">HTML Page Title</p>
+        <p class="c">HTML Tables</p>
+        <p class="c">HTML Lists</p>
+        <p class="c">HTML Block and Inline</p>
+        <p class="c">HTML Div</p>
+        <p class="c">HTML Classes</p>
+        <p class="c">HTML Id</p>
+        <p class="c">HTML Home</p>
+        <p class="c">HTML Introduction</p>
+        <p class="c">HTML Editors</p>
+        <p class="c">HTML Basic</p>
+        <p class="c">HTML Elements</p>
+        <p class="c">HTML Attributes</p>
+        <p class="c">HTML Headings</p>
+        <p class="c">HTML Paragraphs</p>
+        <p class="c">HTML Styles</p>
+        <p class="c">HTML Formatting</p>
+        <p class="c">HTML Quotations</p>
+        <p class="c">HTML Comments</p>
+        <p class="c">HTML Colors</p>
+        <p class="c">HTML CSS</p>
+        <p class="c">HTML Links</p>
+        <p class="c">HTML Images</p>
+        <p class="c">HTML Favicon</p>
+        <p class="c">HTML Page Title</p>
+        <p class="c">HTML Tables</p>
+        <p class="c">HTML Lists</p>
+        <p class="c">HTML Block and Inline</p>
+        <p class="c">HTML Div</p>
+        <p class="c">HTML Classes</p>
+        <p class="c">HTML Id</p>
+        <p class="c">HTML Home</p>
+        <p class="c">HTML Introduction</p>
+        <p class="c">HTML Editors</p>
+        <p class="c">HTML Basic</p>
+        <p class="c">HTML Elements</p>
+        <p class="c">HTML Attributes</p>
+        <p class="c">HTML Headings</p>
+        <p class="c">HTML Paragraphs</p>
+        <p class="c">HTML Styles</p>
+        <p class="c">HTML Formatting</p>
+        <p class="c">HTML Quotations</p>
+        <p class="c">HTML Comments</p>
+        <p class="c">HTML Colors</p>
+        <p class="c">HTML CSS</p>
+        <p class="c">HTML Links</p>
+        <p class="c">HTML Images</p>
+        <p class="c">HTML Favicon</p>
+        <p class="c">HTML Page Title</p>
+        <p class="c">HTML Tables</p>
+        <p class="c">HTML Lists</p>
+        <p class="c">HTML Block and Inline</p>
+        <p class="c">HTML Div</p>
+        <p class="c">HTML Classes</p>
+        <p class="c">HTML Id</p>
+    </div>
+    <div class="o">
+        <div class="d4">
+            <p style="margin-top: 150px; font-size: 55px; margin-left: 25px;">HTML Tutorial</p>
+            <input type="button" value="<Home" class="b1">
+            <input type="button" value="Next>" class="b2">
+            <div class="d5">
+                <p class="p1">HTML is the standard markup language for Web pages.</p>
+                <p class="p1">With HTML you can create your own Website.</p>
+                <p class="p1">HTML is easy to learn - You will enjoy it!</p>
+                <input type="button" value="Study our free HTML Tutorial" class="b3">
+            </div>
+            <hr>
+            <p class="d">Easy Learning with HTML "Try it Yourself"</p>
+            <p class="e">With our "Try it Yourself" editor, you can edit the HTML code and view the result:</p>
+            <div class="d6">
+                <p class="f">Example</p>
+                <div class="d7">
+                    <p>
+                        <input type="text" value="<" class="g">
+                        <input type="text" value="!DOCTYPE" class="h">
+                        <input type="text" value="html" class="i">
+                        <input type="text" value=">" class="g">
+                    </p>
+                    <p>
+                        <input type="text" value="<" class="g">
+                        <input type="text" value="html" class="j">
+                        <input type="text" value=">" class="g">
+                    </p>
+                    <p>
+                        <input type="text" value="<" class="g">
+                        <input type="text" value="head" class="j" style="width: 44px;">
+                        <input type="text" value=">" class="g">
+                    </p>
+                    <p>
+                        <input type="text" value="<" class="g">
+                        <input type="text" value="title" class="j">
+                        <input type="text" value=">" class="g">
+                        <input type="text" value="Page Title" style="border:none; width: 90px; font-size: 20px;">
+                        <input type="text" value="<" class="g">
+                        <input type="text" value="/title" class="j">
+                        <input type="text" value=">" class="g">
+                    </p>
+                    <p>
+                        <input type="text" value="<" class="g">
+                        <input type="text" value="/head" class="j" style="width: 49px;">
+                        <input type="text" value=">" class="g">
+                    </p>
+                    <p>
+                        <input type="text" value="<" class="g">
+                        <input type="text" value="body" class="j" style="width: 44px;">
+                        <input type="text" value=">" class="g">
+                    </p>
+                    <p>
+                        <input type="text" value="<" class="g" style="margin-top: 20px;">
+                        <input type="text" value="h1" class="j" style="width:20px">
+                        <input type="text" value=">" class="g">
+                        <input type="text" value="This is a Heading" style="border:none; width: 155px; font-size: 20px;">
+                        <input type="text" value="<" class="g">
+                        <input type="text" value="/h1" class="j" style="width:28px;">
+                        <input type="text" value=">" class="g">
+                    </p>
+                    <p>
+                        <input type="text" value="<" class="g">
+                        <input type="text" value="p" class="j" style="width:11px">
+                        <input type="text" value=">" class="g">
+                        <input type="text" value="This is a Paragraph" style="border:none; width: 175px; font-size: 20px;">
+                        <input type="text" value="<" class="g">
+                        <input type="text" value="/p" class="j" style="width:16px;">
+                        <input type="text" value=">" class="g" style="margin-bottom: 20px;">
+                    </p>
+                    <p>
+                        <input type="text" value="<" class="g">
+                        <input type="text" value="/body" class="j" style="width: 48px;">
+                        <input type="text" value=">" class="g">
+                    </p>
+                    <p>
+                        <input type="text" value="<" class="g">
+                        <input type="text" value="/html" class="j" style="width: 48px;">
+                        <input type="text" value=">" class="g">
+                    </p>
+                </div>
+                <input type="button" value="Try it Yourself >>" class="b4">
+            </div>
+            <p class="k"><b>Click on the "Try it Yourself" button to see how it works.</b></p>
+            <hr>
+            <p class="d">HTML Examples</p>
+            <p class="e">In this HTML tutorial, you will find more than 200 examples. With our online "Try it Yourself" editor, you can edit and test each example yourself!</p>
+            <input type="button" value="Go to HTML Examples!" class="b5">
+            <hr>
+            <hr style="margin-top: 50px;">
+            <p class="d">HTML Exercises</p>
+            <p class="e">This HTML tutorial also contains nearly 100 HTML exercises.</p>
+            <div class="d8">
+                <p class="l">Test Yourself with Exercises</p>
+                <div class="d7" style="border-left: none; margin-top: 20px; height: 370px;">
+                <p style="font-size: 45px; margin-top: 10px;">Exercise:</p>
+                <p class="e" style="margin-left:0px; margin-top: 10px;">Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
+                <div class="d9">
+                    <p class="m">
+                        <span><</span>
+                        <span>p</span>
+                        <input type="text" style="border: none; width: 80px; height: 30px;">
+                        <span>="About W3Schools">W3Schools is a web developer's site.</span>
+                        <span><</span>
+                        <span>/</span>
+                        <span>p</span>
+                        <span>></span>
+                    </p>
+                </div>
+                <input type="button" value="Submit Answer >>" class="b4" style="margin-left: 0px;">
+                <p class="n"><u>Start the Exercise</u></p>
+                </div>
+            </div>
+            <hr>
+            <p class="d">HTML Quiz Test</p>
+            <p class="e">Test your HTML skills with our HTML Quiz!</p>
+            <input type="button" value="Start HTML Quiz!" class="b6">
+            <hr>
+            <p class="d">My Learning</p>
+            <p class="e">Track your progress with the free "My Learning" program here at W3Schools.</p>
+            <p class="e">Log in to your account, and start earning points!</p>
+            <p class="e">This is an optional feature. You can study at W3Schools without using My Learning.</p>
+            <div class="d10"></div>
+            <hr>
+            <p class="d"> HTML References</p>
+            <p class="e">At W3Schools you will find complete references about HTML elements, attributes, events, color names, entities, character-sets, URL encoding, language codes, HTTP messages, browser support, and more:</p>
+            <input type="button" value="HTML Elements" class="b7">
+            <input type="button" value="Browser Support" class="b7">
+            <input type="button" value="Attributes" class="b7">
+            <input type="button" value="Global Attributes" class="b7">
+            <input type="button" value="Event Attributes" class="b7">
+            <input type="button" value="Color Names" class="b7">
+            <input type="button" value="Canvas" class="b7">
+            <input type="button" value="Audio/Video DOM" class="b7">
+            <input type="button" value="Character Sets" class="b7">
+            <input type="button" value="URL Encoding" class="b7">
+            <input type="button" value="Language Codes" class="b7">
+            <input type="button" value="Country Codes" class="b7">
+            <input type="button" value="HTML Messages" class="b7">
+            <input type="button" value="Px to Em Converter" class="b7">
+            <input type="button" value="Keyboard Shortcuts" class="b7">
+            <div class="d8" style="border-radius: 25px; margin-top: 50px; height: 600px;">
+                <p class="p">Kickstart your career</p>
+                <p class="q">Get certified by completing the HTML course</p>
+                <input type="button" value="Get Certified" class="b8">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
